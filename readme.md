@@ -39,13 +39,13 @@
 
 ### Retorna uma mensagem de boas vindas
 
-```http
+```bash
   GET /api/hello
 ```
 
 ### Retorna uma mensagem de boas vindas com o nome passado na requisição
 
-```http
+```bash
   GET /api/hello/nome
 ```
 
