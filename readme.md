@@ -3,17 +3,17 @@
 
 ### Retorna todos os usuários
 
-```http
+```bash
   GET /users
 ```
 ### Retorna explicação de como cadastrar novo usuário
 
-```http
+```bash
   GET /users/novoUser
 ```
 ### Cadastra novo usuário
 
-```http
+```bash
   POST /users/novoUser
 ```
 
@@ -23,12 +23,12 @@
 
 ### Retorna todos os produtos
 
-```http
+```bash
   GET /api/produtos
 ```
 ### Cadastra novo produto
 
-```http
+```bash
   POST /api/novoProduto
 ```
 
