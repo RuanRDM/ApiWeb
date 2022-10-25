@@ -50,5 +50,19 @@
 ```
 
 
-### Documentações utilizadas:
+### Documentações utilizadas
 https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk
+
+
+### Sqls utilizados direto no banco
+```
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco NUMERIC(5,2)
+);
+
+select * from produtos
+INSERT INTO produtos (nome, quantidade, preco) VALUES ('tv', 2, '250.00')
+```
