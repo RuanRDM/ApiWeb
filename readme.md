@@ -3,17 +3,17 @@
 
 ### Retorna todos os usuários
 
-```http
+```
   GET /users
 ```
 ### Retorna explicação de como cadastrar novo usuário
 
-```http
+```
   GET /users/novoUser
 ```
 ### Cadastra novo usuário
 
-```http
+```
   POST /users/novoUser
 ```
 
@@ -23,12 +23,12 @@
 
 ### Retorna todos os produtos
 
-```http
+```
   GET /api/produtos
 ```
 ### Cadastra novo produto
 
-```http
+```
   POST /api/novoProduto
 ```
 
@@ -39,13 +39,13 @@
 
 ### Retorna uma mensagem de boas vindas
 
-```http
+```
   GET /api/hello
 ```
 
 ### Retorna uma mensagem de boas vindas com o nome passado na requisição
 
-```http
+```
   GET /api/hello/nome
 ```
 
