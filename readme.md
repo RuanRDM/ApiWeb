@@ -3,17 +3,17 @@
 
 ### Retorna todos os usuários
 
-```bash
+```http
   GET /users
 ```
 ### Retorna explicação de como cadastrar novo usuário
 
-```bash
+```http
   GET /users/novoUser
 ```
 ### Cadastra novo usuário
 
-```bash
+```http
   POST /users/novoUser
 ```
 
@@ -23,12 +23,12 @@
 
 ### Retorna todos os produtos
 
-```bash
+```http
   GET /api/produtos
 ```
 ### Cadastra novo produto
 
-```bash
+```http
   POST /api/novoProduto
 ```
 
@@ -39,13 +39,16 @@
 
 ### Retorna uma mensagem de boas vindas
 
-```bash
+```http
   GET /api/hello
 ```
 
 ### Retorna uma mensagem de boas vindas com o nome passado na requisição
 
-```bash
+```http
   GET /api/hello/nome
 ```
 
+
+### Documentações utilizadas:
+https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk

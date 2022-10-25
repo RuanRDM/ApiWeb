@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api');
+var produtoRouter = require('./routes/produto.routes');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/', apiRouter);
+app.use('/api2/', produtoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,5 +41,20 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const cors = require('cors');
+
+// ==> Rotas da API:
+// const index = require('./routes/index');
+// const productRoute = require('./routes/produto.routes');
+
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// app.use(express.json({ type: 'application/vnd.api+json' }));
+// app.use(cors());
+
+// app.use(index);
+// app.use('/api2/', productRoute);
+
 
 module.exports = app;
