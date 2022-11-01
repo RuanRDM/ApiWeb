@@ -75,8 +75,9 @@ Body (x-www-form):
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `nome` | `string` | **Obrigatório**. O nome do produto que será cadastrado |
-| `quantidade` | `interger` | **Obrigatório**. O preço do produto que será cadastrado |
+| `quantidade` | `interger` | **Obrigatório**. A quantidade do produto que será cadastrado |
 | `preco` | `numeric` | **Obrigatório**. O preço do produto que será cadastrado |
+
 Headers:
 | Key            | Value                           |
 | :----------    | :------------------------------ |
@@ -101,8 +102,9 @@ Body (x-www-form):
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `nome` | `string` | **Obrigatório**. O nome do produto que será cadastrado |
-| `quantidade` | `interger` | **Obrigatório**. O preço do produto que será cadastrado |
+| `quantidade` | `interger` | **Obrigatório**. A quantidade do produto que será cadastrado |
 | `preco` | `numeric` | **Obrigatório**. O preço do produto que será cadastrado |
+
 Headers:
 | Key            | Value                           |
 | :----------    | :------------------------------ |
