@@ -1,6 +1,8 @@
 const db = require("../config/database");
+var auth = require("./auth.controller");
 // ==> Método home:
-exports.home = async (req, res)=> {
+exports.home = async (req, res) => {
+  //auth.verifyJWT();
   res.send('Bem vindo, API de operações CRUD no banco de dados');
 }
 

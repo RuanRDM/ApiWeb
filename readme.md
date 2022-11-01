@@ -49,6 +49,15 @@
   GET /api/hello/nome
 ```
 ## Documentação da API utilizando banco de dados postgres
+### Chamada do token para utilização
+```
+  POST /login
+```
+Body (x-www-form):
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `user` | `string` | seu usuário |
+| `password` | `string` | sua senha |
 
 ### Lista todos os produtos
 
@@ -62,6 +71,18 @@
 ```
   POST /api2/novoproduto
 ```
+Body (x-www-form):
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `nome` | `string` | **Obrigatório**. O nome do produto que será cadastrado |
+| `quantidade` | `interger` | **Obrigatório**. O preço do produto que será cadastrado |
+| `preco` | `numeric` | **Obrigatório**. O preço do produto que será cadastrado |
+Headers:
+| Key            | Value                           |
+| :----------    | :------------------------------ |
+| `Content-Type` | application/json                |
+| `x-access-token` | **Token recebido pela chamada /login** |
+
 ![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--vEe4jhLh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-04.gif)
 
 ### Listar produtos pelo ID
@@ -76,6 +97,18 @@
 ```
   PUT /api2/attproduto/:id
 ```
+Body (x-www-form):
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `nome` | `string` | **Obrigatório**. O nome do produto que será cadastrado |
+| `quantidade` | `interger` | **Obrigatório**. O preço do produto que será cadastrado |
+| `preco` | `numeric` | **Obrigatório**. O preço do produto que será cadastrado |
+Headers:
+| Key            | Value                           |
+| :----------    | :------------------------------ |
+| `Content-Type` | application/json                |
+| `x-access-token` | **Token recebido pela chamada /login** |
+
 ![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--D0J0mHVt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-08.gif)
 
 ### Deletar um produto pelo ID
@@ -83,6 +116,12 @@
 ```
   DELETE /api2/rmproduto/:id
 ```
+Headers:
+| Key            | Value                           |
+| :----------    | :------------------------------ |
+| `Content-Type` | application/json                |
+| `x-access-token` | **Token recebido pela chamada /login** |
+
 ![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--D0J0mHVt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-08.gif)
 
 
