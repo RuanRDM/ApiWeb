@@ -1,5 +1,5 @@
 
-## Documentação da API
+## Documentação da API utilizando DAO
 
 ### Retorna todos os usuários
 
@@ -48,7 +48,45 @@
 ```
   GET /api/hello/nome
 ```
+## Documentação da API utilizando banco de dados postgres
 
+### Lista todos os produtos
+
+```
+  GET /api2/produtos
+```
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--2aCuBfFH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-06.gif)
+
+### Cadastra novo produto
+
+```
+  POST /api2/novoproduto
+```
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--vEe4jhLh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-04.gif)
+
+### Listar produtos pelo ID
+
+```
+  GET /api2/produtos/:id
+```
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--pXy9pLeZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-07.gif)
+
+### Atualizar um produto pelo ID
+
+```
+  PUT /api2/attproduto/:id
+```
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--D0J0mHVt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-08.gif)
+
+### Deletar um produto pelo ID
+
+```
+  DELETE /api2/rmproduto/:id
+```
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--D0J0mHVt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-08.gif)
+
+
+## Considerações 
 
 ### Documentações utilizadas
 https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk
@@ -60,9 +98,6 @@ CREATE TABLE produtos (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     quantidade INTEGER NOT NULL,
-    preco NUMERIC(5,2)
+    preco NUMERIC(10,2)
 );
-
-select * from produtos
-INSERT INTO produtos (nome, quantidade, preco) VALUES ('tv', 2, '250.00')
 ```

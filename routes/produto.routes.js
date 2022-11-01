@@ -3,11 +3,22 @@ const productController = require('../controllers/produto.controller');
 
 // ==> Definindo as rotas do CRUD - 'Product':
 
-// ==> Rota responsável por criar um novo 'Product': (POST): localhost:3000/api/products
-router.post('/produtos', productController.createProduct);
+// ==> Rota home 
+router.get('/',productController.home);
 
+// ==> Rota responsável por criar um novo 'Produtos': (POST): localhost:3000/api2/novoproduto
+router.post('/novoproduto', productController.createProduct);
 
-// ==> Rota responsável por listar todos os 'Products': (GET): localhost:3000/api/products
+// ==> Rota responsável por listar todos os 'Produtos': (GET): localhost:3000/api2/produtos
 router.get('/produtos', productController.listAllProducts);
+
+// ==> Rota responsável por selecionar 'Produtos' pelo 'Id': (GET): localhost:3000/api2/produtos/:id
+router.get('/produtos/:id', productController.findProductById);
+
+// ==> Rota responsável por atualizar 'Produtos' pelo 'Id': (PUT): localhost: 3000/api2/attproduto/:id
+router.put('/attproduto/:id', productController.updateProductById);
+
+// ==> Rota responsável por excluir 'Produtos' pelo 'Id': (DELETE): localhost:3000/api2/produtos/:id
+router.delete('/rmprodutos/:id', productController.deleteProductById);
 
 module.exports = router;
