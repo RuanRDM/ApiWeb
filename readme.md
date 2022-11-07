@@ -141,4 +141,13 @@ CREATE TABLE produtos (
     quantidade INTEGER NOT NULL,
     preco NUMERIC(10,2)
 );
+
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    "user" VARCHAR(25) NOT NULL,
+    password VARCHAR(25) NOT NULL
+);
+
+INSERT INTO usuarios ("user", password) VALUES ('ruan', '1234');
+INSERT INTO usuarios ("user", password) VALUES ('pedro', '4321');
 ```
