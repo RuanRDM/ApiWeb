@@ -124,15 +124,19 @@ Headers:
 | `Content-Type` | application/json                |
 | `x-access-token` | **Token recebido pela chamada /login** |
 
-![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--D0J0mHVt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-08.gif)
+![Exemplo utilização: ](https://res.cloudinary.com/practicaldev/image/fetch/s--XN2Dd-jT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://s5.gifyu.com/images/postgresql-10.gif)
 
 
 ## Considerações 
 
 ### Documentações utilizadas
-https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk
+- https://dev.to/azure/desenvolvendo-uma-aplicacao-crud-node-js-com-postgresql-3clk
 
-
+### Dependencias (pacotes)
+```
+npm i cors dotenv express express-promise-router pg
+npm install -S jsonwebtoken
+```
 ### Sqls utilizados direto no banco
 ```
 CREATE TABLE produtos (

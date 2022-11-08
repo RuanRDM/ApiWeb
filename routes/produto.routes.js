@@ -20,6 +20,6 @@ router.get('/produtos/:id', productController.findProductById);
 router.put('/attproduto/:id',verifyJWT, productController.updateProductById);
 
 // ==> Rota responsável por excluir 'Produtos' pelo 'Id': (DELETE): localhost:3000/api2/produtos/:id
-router.delete('/rmprodutos/:id',verifyJWT, productController.deleteProductById);
+router.delete('/rmproduto/:id',verifyJWT, productController.deleteProductById);
 
 module.exports = router;
